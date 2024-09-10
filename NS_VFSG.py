@@ -182,7 +182,6 @@ def chart_demographic_pie(x_column, title):
 
     return p
 
-
 ### Viz#3 Improvement Chart ###
     
 def improvement_chart(df_clean):
@@ -217,7 +216,7 @@ def improvement_chart(df_clean):
         width=1280,
         height=600,
         x_axis_label="Improvement Score",
-        y_axis_label="Likes",
+        y_axis_label="Age",
         background_fill_color="white",
     )
 
@@ -225,7 +224,7 @@ def improvement_chart(df_clean):
         level_source = ColumnDataSource(df_clean[df_clean["Improvement Level"] == level])
         p.scatter(
             x="Improvement Score",
-            y="Likes",
+            y="SWEMWBS Start Age",
             size='SWEMWBS Start Age', 
             color=color,
             source=level_source,
