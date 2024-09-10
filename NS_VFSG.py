@@ -185,7 +185,12 @@ def chart_demographic_pie(x_column, title):
 ### Viz#3 Improvement Chart ###
     
 def improvement_chart(df_clean):
-    df_clean = df.dropna(subset=["Improvement Score", "Likes", "SWEMWBS Start Age"]).copy()
+    df_clean = df.dropna(subset=["Improvement Score", "SWEMWBS Start Age"]).copy()
+    df_clean = df.dropna(subset=["Improvement Score", "SWEMWBS Start Age"]).copy()
+    df_clean["Posts"] = df_clean["Posts"].fillna(0)
+    df_clean["Comments"] = df_clean["Comments"].fillna(0)
+    df_clean["Likes"] = df_clean["Likes"].fillna(0)
+
 
     conditions = [
         (df_clean["Improvement Score"] <= 0.00),
@@ -218,6 +223,8 @@ def improvement_chart(df_clean):
         x_axis_label="Improvement Score",
         y_axis_label="Age",
         background_fill_color="white",
+        tools="pan,wheel_zoom,box_zoom,reset",  # Enable tools including wheel_zoom
+        active_scroll="wheel_zoom",  # Set wheel zoom as the active tool by default
     )
 
     for level, color in color_dict.items():
