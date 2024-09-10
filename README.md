@@ -6,7 +6,6 @@ This project is a volunteer-led initiative of [**Viz For Social Good**](https://
 
 [**Viz For Social Good**](https://www.vizforsocialgood.com/) connects data enthusiasts with mission-driven organizations globally. Nonprofit charities are working to change the world for the better, and Viz For Social Good enable these organizations to communicate their impact through data storytelling. 
 
-
 ## About Noise Solution
 
 [**Noise Solution**](https://www.noisesolution.org/) is a social purpose organisation based in the East of England that engages youth at risk through informal music mentoring. By working with young people referred from alternative education, mental health, or social services, they aim to positively impact well-being and intrinsic motivation.
@@ -28,8 +27,6 @@ The project currently includes:
 ## Live Dashboard
 
 You can view the live dashboard by clicking [here](<https://coriander31415.github.io/NoiseSolution-VizForSocialGood/NS_VFSG.html>).
-
-Or you can download and view the dashboard [here](<https://raw.githubusercontent.com/coriander31415/NoiseSolution-VizForSocialGood/main/NS_VFSG.html>).
 
 ## Screenshots
 
@@ -61,34 +58,6 @@ Or you can download and view the dashboard [here](<https://raw.githubusercontent
 I chose **Bokeh** for this project due to its interactive features, which align well with my previous experience in **Tableau**, my favourite visualisation tool. This project allowed me to practice building interactive, custom dashboards using Python3, and Bokeh provided a great way to bring that to life.
 
 ## Running the Project
-
-### Requirements
-
-To run this project, ensure the following libraries are installed:
-
-```bash
-pip3 install pandas bokeh requests xlrd scipy
-```
-
-### Steps
-
-### Run the project in the Jupyter Notebook or Google Colab 
-
-1. Clone the repository:
-    
-    ```bash
-    git clone https://github.com/coriander31415/NoiseSolution-VizForSocialGood.git
-    ```
-    
-2. Open the project in Jupyter Notebook:
-    
-    ```bash
-    jupyter notebook NS_VFSG.ipynb
-    ```
-    
-3. Run the notebook to generate the dashboard.
-
-### Or run the Project in VS Code:
 
 1. Ensure you have the required libraries installed:
     

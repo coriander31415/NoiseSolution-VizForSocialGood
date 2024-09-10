@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import base64
 from math import pi
-from bokeh.models import ColumnDataSource, HoverTool, Div, Spacer
+from bokeh.models import ColumnDataSource, HoverTool, Div, Spacer, Label
 from bokeh.plotting import figure, output_notebook, show, output_file
 from bokeh.layouts import row, column
 from bokeh.transform import factor_cmap, cumsum
